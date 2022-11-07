@@ -1,0 +1,18 @@
+10/03/2022
+Tx_Rev3a 
+
+Transmitter revision 3a is a 4-layer board that was designed to spread MOSFET heat over a large
+section of the PCB. Testing of the earlier TxRev3 has demonstrated that this board shows a low
+temperature rise of around 28 degrees C with an input of 19 Watts and an output of 10 Watts. 
+
+Note 1: See Google Docs folder Onda Tx_Rev3a for current version changes.The Tx_Rev3a Gerbers 
+have not yet been fabbed and tested as of this documentation release date.
+Note 2: This and other prototype versions are expected to be hand assembled at this stage of
+development.  Assembly and Centroid files will have to be generated for production release.
+Note 3: After this version is tested, it is expected to be a release candidate for the WPT
+system's transmitter board assembly.
+Note 4: U4-4 (CTRL1) pin is now pulled down to GND.
+Note 5: Two pull-up for I2C to U4 have been removed.  Pull-up are on the programmer side.
+Note 6: R10 is now in series with U4-1 (Fo out) to allow for opening signal to allow external Fo drive.
+Note 7: Size of seven 0.1uF SMT caps have been changed from 0402 to 0603 for easier hand assembly:
+	C3, C8, C10, C11, C14, C18, and C51.
